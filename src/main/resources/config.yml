@@ -1,0 +1,30 @@
+options:
+  allow-ignore-staff: true
+
+placeholderapi:
+  differentiate-vanished: true
+  vanished-suffix: " (vanished)"
+  vanish-placeholders:
+    - "%essentials_vanished%"
+    - "%supervanish_is_vanished%"
+
+formats:
+  sent: "[Me -> %player%] %message%"
+  receive: "[%player% -> Me] %message%"
+
+messages:
+  no-permission: "<red>No permission."
+  player-not-found: "<red>Player not found."
+  ignoring-you: "<red>This player is ignoring you."
+  msg-usage: "<red>Usage: /msg <player> <message>"
+  r-usage: "<red>Usage: /r <message>"
+  msgignore-usage: "<red>Usage: /msgignore <player>"
+  msgunignore-usage: "<red>Usage: /msgunignore <player>"
+  ignored: "<green>Player ignored."
+  unignored: "<green>Player unignored."
+  cannot-ignore-staff: "<red>You cannot ignore that player."
+  no-reply: "<red>No one to reply to."
+  reloaded: "<green>Config and data reloaded."
+
+gui:
+  title: "Ignore List"

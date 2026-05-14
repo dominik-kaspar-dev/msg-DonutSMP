@@ -1,0 +1,47 @@
+name: msgDonutSMP
+main: dev.domin.msgdonutsmp.MsgDonutSMP
+version: 1.0.0
+author: dominik-kaspar-dev
+api-version: 1.20
+softdepend:
+  - PlaceholderAPI
+
+commands:
+  msg:
+    description: Send a private message
+    usage: /msg <player> <message>
+    permission: msg.use
+  r:
+    description: Reply to last person
+    usage: /r <message>
+    permission: msg.use
+  msgignore:
+    description: Ignore a player
+    usage: /msgignore <player>
+    permission: msg.use
+  msgunignore:
+    description: Unignore a player
+    usage: /msgunignore <player>
+    permission: msg.use
+  msgignorelist:
+    description: Open ignore list GUI
+    usage: /msgignorelist
+    permission: msg.use
+  msgreload:
+    description: Reload config and data
+    usage: /msgreload
+    permission: msg.admin
+
+permissions:
+  msg.use:
+    description: Use messaging commands
+    default: true
+  msg.bypass.vanish:
+    description: Allows messaging vanished players
+    default: op
+  msg.admin:
+    description: Admin commands for the plugin
+    default: op
+  msg.bypass.ignore:
+    description: Staff cannot be ignored if this permission exists
+    default: op
